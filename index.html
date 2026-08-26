@@ -2,380 +2,1989 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>GLOBAL IT PUBLICATION | Graphics, Web Designing, Data Analysis & Digital Marketing</title>
+    <title>
+        GLOBAL IT PUBLICATION | Web Designing, Digital Marketing, Data Analysis & Publishing
+    </title>
 
     <meta name="description"
-        content="GLOBAL IT PUBLICATION provides Graphics Designing, Web Designing, Data Analysis and Digital Marketing services.">
+        content="GLOBAL IT PUBLICATION provides Graphics Designing, Web Designing, Data Analysis, Power BI, Digital Marketing and Publishing services.">
 
-    <link rel="stylesheet" href="style.css">
+    <meta name="keywords"
+        content="GLOBAL IT PUBLICATION, Graphics Designing, Web Designing, Data Analysis, Power BI, Digital Marketing, SEO, Google Ads, Website Designing, Publishing">
+
+    <meta name="author"
+        content="Nilesh Janardan Gaikwad">
+
+    <meta name="robots"
+        content="index, follow">
+
+    <!--
+    =========================================================
+    GOOGLE ANALYTICS / GOOGLE ADS
+    =========================================================
+
+    Add your Google Tag here after creating it.
+
+    Example:
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag(){
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    =========================================================
+    -->
+
+
+    <style>
+
+        /* =====================================================
+           GLOBAL
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            line-height: 1.6;
+
+            background: #f5f7fb;
+
+            color: #222;
+        }
+
+
+        img {
+
+            max-width: 100%;
+
+            display: block;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        header {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #182848,
+                    #4b6cb7
+                );
+
+            color: white;
+
+            padding: 18px 6%;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+            box-shadow:
+                0 4px 15px rgba(0,0,0,0.20);
+        }
+
+
+        .logo h1 {
+
+            font-size: 25px;
+
+            letter-spacing: 1px;
+        }
+
+
+        .logo p {
+
+            color: #ffd166;
+
+            font-size: 14px;
+
+            margin-top: 2px;
+        }
+
+
+        nav {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 7px;
+        }
+
+
+        nav a {
+
+            color: white;
+
+            text-decoration: none;
+
+            padding: 9px 13px;
+
+            border-radius: 20px;
+
+            font-size: 14px;
+
+            transition: 0.3s;
+        }
+
+
+        nav a:hover {
+
+            background: #ffd166;
+
+            color: #182848;
+        }
+
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+
+            min-height: 620px;
+
+            background:
+                linear-gradient(
+                    rgba(24,40,72,0.90),
+                    rgba(75,108,183,0.90)
+                );
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            color: white;
+
+            padding: 50px 20px;
+        }
+
+
+        .hero-content {
+
+            max-width: 950px;
+        }
+
+
+        .hero h2 {
+
+            font-size: 50px;
+
+            margin-bottom: 15px;
+
+            color: #ffd166;
+
+            letter-spacing: 1px;
+        }
+
+
+        .hero h3 {
+
+            font-size: 30px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .hero p {
+
+            font-size: 19px;
+
+            margin-bottom: 30px;
+        }
+
+
+        .hero-profile {
+
+            font-size: 18px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .hero-qualification {
+
+            color: #ffd166;
+
+            font-weight: bold;
+
+            margin-bottom: 20px;
+        }
+
+
+
+        /* =====================================================
+           BUTTON
+        ===================================================== */
+
+        .btn {
+
+            display: inline-block;
+
+            text-decoration: none;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff512f,
+                    #dd2476
+                );
+
+            color: white;
+
+            padding: 13px 25px;
+
+            border-radius: 30px;
+
+            font-weight: bold;
+
+            box-shadow:
+                0 6px 15px rgba(0,0,0,0.20);
+
+            transition: 0.3s;
+
+            border: none;
+
+            cursor: pointer;
+        }
+
+
+        .btn:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 10px 22px rgba(0,0,0,0.30);
+        }
+
+
+
+        /* =====================================================
+           GENERAL SECTION
+        ===================================================== */
+
+        .section {
+
+            padding: 80px 6%;
+        }
+
+
+        .section-title {
+
+            text-align: center;
+
+            font-size: 34px;
+
+            margin-bottom: 45px;
+
+            color: #182848;
+        }
+
+
+        .section-title::after {
+
+            content: "";
+
+            display: block;
+
+            width: 80px;
+
+            height: 4px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #ff512f,
+                    #dd2476
+                );
+
+            margin: 12px auto;
+
+            border-radius: 10px;
+        }
+
+
+        .section-intro {
+
+            text-align: center;
+
+            margin-top: -25px;
+
+            margin-bottom: 35px;
+
+            color: #555;
+        }
+
+
+
+        /* =====================================================
+           ABOUT
+        ===================================================== */
+
+        .about-container {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 50px;
+
+            background: white;
+
+            padding: 40px;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 30px rgba(0,0,0,0.08);
+        }
+
+
+        .about-image {
+
+            flex: 1;
+
+            text-align: center;
+        }
+
+
+        .about-image img {
+
+            width: 260px;
+
+            height: 300px;
+
+            object-fit: cover;
+
+            border-radius: 20px;
+
+            border: 7px solid #e9efff;
+
+            box-shadow:
+                0 8px 20px rgba(0,0,0,0.15);
+
+            margin: auto;
+        }
+
+
+        .about-content {
+
+            flex: 2;
+        }
+
+
+        .about-content h2 {
+
+            color: #4b6cb7;
+
+            margin-bottom: 8px;
+        }
+
+
+        .about-content h3 {
+
+            color: #dd2476;
+
+            margin-bottom: 18px;
+        }
+
+
+        .about-content p {
+
+            margin-bottom: 18px;
+
+            color: #444;
+        }
+
+
+        .profile-tags {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin-top: 20px;
+        }
+
+
+        .profile-tag {
+
+            background: #eef3ff;
+
+            color: #182848;
+
+            padding: 7px 12px;
+
+            border-radius: 20px;
+
+            font-size: 13px;
+
+            font-weight: bold;
+        }
+
+
+
+        /* =====================================================
+           SERVICES
+        ===================================================== */
+
+        .services-section {
+
+            background:
+                linear-gradient(
+                    180deg,
+                    #eef4ff,
+                    #ffffff
+                );
+        }
+
+
+        .services-container {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .service-card {
+
+            background: white;
+
+            padding: 30px 25px;
+
+            border-radius: 20px;
+
+            text-align: center;
+
+            box-shadow:
+                0 8px 25px rgba(0,0,0,0.08);
+
+            border-top: 5px solid #4b6cb7;
+
+            transition: 0.3s;
+        }
+
+
+        .service-card:hover {
+
+            transform: translateY(-10px);
+
+            box-shadow:
+                0 15px 35px rgba(0,0,0,0.15);
+        }
+
+
+        .service-icon {
+
+            font-size: 50px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .service-card h3 {
+
+            color: #182848;
+
+            margin-bottom: 15px;
+        }
+
+
+        .service-card p {
+
+            color: #555;
+
+            margin-bottom: 15px;
+        }
+
+
+        .service-card ul {
+
+            list-style: none;
+
+            text-align: left;
+        }
+
+
+        .service-card li {
+
+            padding: 5px 0;
+
+            color: #444;
+        }
+
+
+        .service-card li::before {
+
+            content: "✓ ";
+
+            color: #ff512f;
+
+            font-weight: bold;
+        }
+
+
+
+        /* =====================================================
+           DIGITAL MARKETING
+        ===================================================== */
+
+        .digital-container {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 22px;
+        }
+
+
+        .digital-card {
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ffffff,
+                    #eef3ff
+                );
+
+            padding: 28px;
+
+            border-radius: 18px;
+
+            border-left: 5px solid #dd2476;
+
+            box-shadow:
+                0 7px 20px rgba(0,0,0,0.07);
+
+            transition: 0.3s;
+        }
+
+
+        .digital-card:hover {
+
+            transform: scale(1.04);
+        }
+
+
+        .digital-card h3 {
+
+            color: #4b6cb7;
+
+            margin-bottom: 10px;
+        }
+
+
+        .digital-card p {
+
+            color: #555;
+        }
+
+
+
+        /* =====================================================
+           PUBLICATIONS
+        ===================================================== */
+
+        .book-section {
+
+            padding: 80px 6%;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fff3e6,
+                    #ffeaf4
+                );
+        }
+
+
+        .books-container {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 30px;
+        }
+
+
+        .book-card {
+
+            background: white;
+
+            border-radius: 22px;
+
+            padding: 30px;
+
+            display: flex;
+
+            gap: 25px;
+
+            align-items: center;
+
+            box-shadow:
+                0 10px 30px rgba(0,0,0,0.10);
+
+            transition: 0.3s;
+
+            border-top: 5px solid #dd2476;
+        }
+
+
+        .book-card:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 18px 35px rgba(0,0,0,0.16);
+        }
+
+
+        .book-image {
+
+            flex: 0 0 150px;
+
+            text-align: center;
+        }
+
+
+        .book-image img {
+
+            width: 150px;
+
+            height: 210px;
+
+            object-fit: cover;
+
+            border-radius: 8px;
+
+            box-shadow:
+                0 8px 18px rgba(0,0,0,0.25);
+
+            margin: auto;
+        }
+
+
+        .book-content {
+
+            flex: 1;
+        }
+
+
+        .book-content h2 {
+
+            color: #dd2476;
+
+            font-size: 25px;
+
+            margin-bottom: 3px;
+        }
+
+
+        .book-content h3 {
+
+            color: #4b6cb7;
+
+            font-size: 18px;
+
+            margin-bottom: 5px;
+        }
+
+
+        .book-subtitle {
+
+            color: #777;
+
+            font-weight: bold;
+
+            margin-bottom: 12px;
+        }
+
+
+        .book-content p {
+
+            margin-bottom: 10px;
+
+            font-size: 14px;
+        }
+
+
+        .book-details {
+
+            background: #f5f7fb;
+
+            padding: 10px 15px;
+
+            border-radius: 10px;
+
+            margin: 15px 0;
+        }
+
+
+        .book-details p {
+
+            margin: 3px 0;
+
+            font-size: 13px;
+        }
+
+
+
+        /* =====================================================
+           WHY CHOOSE US
+        ===================================================== */
+
+        .why-container {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .why-card {
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 18px;
+
+            text-align: center;
+
+            box-shadow:
+                0 7px 20px rgba(0,0,0,0.08);
+
+            transition: 0.3s;
+        }
+
+
+        .why-card:hover {
+
+            transform: translateY(-7px);
+        }
+
+
+        .why-card h3 {
+
+            color: #ff512f;
+
+            margin-bottom: 12px;
+        }
+
+
+        .why-card p {
+
+            color: #555;
+        }
+
+
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
+
+        .contact-section {
+
+            padding: 80px 6%;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #182848,
+                    #4b6cb7
+                );
+
+            color: white;
+        }
+
+
+        .contact-section .section-title {
+
+            color: white;
+        }
+
+
+        .contact-container {
+
+            max-width: 1050px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 50px;
+        }
+
+
+        .contact-container h3 {
+
+            font-size: 25px;
+
+            margin-bottom: 20px;
+
+            color: #ffd166;
+        }
+
+
+        .contact-container p {
+
+            margin-bottom: 15px;
+        }
+
+
+
+        /* =====================================================
+           CONTACT BUTTONS
+        ===================================================== */
+
+        .contact-buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin-top: 25px;
+        }
+
+
+        .contact-btn {
+
+            display: inline-block;
+
+            text-decoration: none;
+
+            padding: 11px 18px;
+
+            border-radius: 25px;
+
+            color: white;
+
+            font-weight: bold;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff512f,
+                    #dd2476
+                );
+
+            transition: 0.3s;
+        }
+
+
+        .contact-btn:hover {
+
+            transform: translateY(-3px);
+        }
+
+
+
+        /* =====================================================
+           CONTACT FORM
+        ===================================================== */
+
+        .contact-form {
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 10px 30px rgba(0,0,0,0.15);
+        }
+
+
+        .contact-form label {
+
+            display: block;
+
+            color: #333;
+
+            font-weight: bold;
+
+            margin-bottom: 5px;
+        }
+
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+
+            width: 100%;
+
+            padding: 13px;
+
+            margin-bottom: 15px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 8px;
+
+            font-size: 15px;
+
+            outline: none;
+        }
+
+
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+
+            border-color: #4b6cb7;
+
+            box-shadow:
+                0 0 5px rgba(75,108,183,0.25);
+        }
+
+
+        .contact-form textarea {
+
+            height: 120px;
+
+            resize: vertical;
+        }
+
+
+        .contact-form button {
+
+            width: 100%;
+
+            padding: 13px;
+
+            border: none;
+
+            border-radius: 25px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff512f,
+                    #dd2476
+                );
+
+            color: white;
+
+            font-weight: bold;
+
+            font-size: 16px;
+
+            cursor: pointer;
+        }
+
+
+        .contact-form button:hover {
+
+            opacity: 0.9;
+        }
+
+
+        .contact-form button:disabled {
+
+            opacity: 0.6;
+
+            cursor: not-allowed;
+        }
+
+
+        #form-result {
+
+            margin-top: 15px;
+
+            padding: 12px;
+
+            border-radius: 8px;
+
+            text-align: center;
+
+            font-weight: bold;
+
+            display: none;
+        }
+
+
+        .success-message {
+
+            background: #d4edda;
+
+            color: #155724;
+        }
+
+
+        .error-message {
+
+            background: #f8d7da;
+
+            color: #721c24;
+        }
+
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            background: #111827;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 30px 20px;
+        }
+
+
+        footer h3 {
+
+            color: #ffd166;
+
+            margin-bottom: 10px;
+        }
+
+
+        footer p {
+
+            margin: 7px 0;
+
+            color: #ddd;
+        }
+
+
+
+        /* =====================================================
+           FLOATING WHATSAPP
+        ===================================================== */
+
+        .whatsapp {
+
+            position: fixed;
+
+            right: 20px;
+
+            bottom: 20px;
+
+            width: 58px;
+
+            height: 58px;
+
+            background: #25D366;
+
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 27px;
+
+            text-decoration: none;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.30);
+
+            z-index: 2000;
+
+            transition: 0.3s;
+        }
+
+
+        .whatsapp:hover {
+
+            transform: scale(1.1);
+        }
+
+
+
+        /* =====================================================
+           RESPONSIVE TABLET
+        ===================================================== */
+
+        @media (max-width: 1000px) {
+
+            .services-container,
+            .digital-container,
+            .why-container {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+
+
+        /* =====================================================
+           RESPONSIVE MOBILE
+        ===================================================== */
+
+        @media (max-width: 768px) {
+
+            header {
+
+                justify-content: center;
+
+                text-align: center;
+            }
+
+
+            nav {
+
+                justify-content: center;
+
+                margin-top: 12px;
+            }
+
+
+            .hero {
+
+                min-height: 520px;
+            }
+
+
+            .hero h2 {
+
+                font-size: 36px;
+            }
+
+
+            .hero h3 {
+
+                font-size: 23px;
+            }
+
+
+            .hero p {
+
+                font-size: 16px;
+            }
+
+
+            .about-container {
+
+                flex-direction: column;
+
+                text-align: center;
+            }
+
+
+            .profile-tags {
+
+                justify-content: center;
+            }
+
+
+            .book-card {
+
+                flex-direction: column;
+
+                text-align: center;
+            }
+
+
+            .book-content {
+
+                width: 100%;
+            }
+
+
+            .contact-container {
+
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+
+        /* =====================================================
+           SMALL MOBILE
+        ===================================================== */
+
+        @media (max-width: 550px) {
+
+            .services-container,
+            .digital-container,
+            .why-container,
+            .books-container {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .section {
+
+                padding: 60px 5%;
+            }
+
+
+            .section-title {
+
+                font-size: 28px;
+            }
+
+
+            .about-container {
+
+                padding: 25px;
+            }
+
+
+            .about-image img {
+
+                width: 220px;
+
+                height: 260px;
+            }
+
+
+            .book-card {
+
+                padding: 25px;
+            }
+
+
+            .book-image img {
+
+                width: 200px;
+
+                height: 280px;
+            }
+
+
+            nav a {
+
+                font-size: 13px;
+
+                padding: 7px 9px;
+            }
+
+
+            .hero h2 {
+
+                font-size: 30px;
+            }
+
+
+            .hero h3 {
+
+                font-size: 20px;
+            }
+
+        }
+
+    </style>
+
 </head>
+
+
 
 <body>
 
-    <!-- ================= HEADER ================= -->
 
-    <header>
+<!-- =====================================================
+     HEADER
+===================================================== -->
 
-        <div class="logo">
-            <h1>GLOBAL IT PUBLICATION</h1>
-            <p>Creative • Digital • Data</p>
-        </div>
+<header>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#digital-marketing">Digital Marketing</a>
-            <a href="#book">Parv Usheche</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <div class="logo">
 
-    </header>
+        <h1>
+            GLOBAL IT PUBLICATION
+        </h1>
 
+        <p>
+            Creative • Digital • Data • Publishing
+        </p>
 
-    <!-- ================= HOME ================= -->
-
-    <section id="home" class="hero">
-
-        <div class="hero-content">
-
-            <h2>GLOBAL IT PUBLICATION</h2>
-
-            <h3>
-                Creative Solutions for Your Digital Growth
-            </h3>
-
-            <p>
-                Graphics Designing | Web Designing |
-                Data Analysis | Digital Marketing
-            </p>
-
-            <a href="#services" class="btn">
-                Explore Our Services
-            </a>
-
-        </div>
-
-    </section>
+    </div>
 
 
-    <!-- ================= ABOUT ================= -->
+    <nav>
 
-    <section id="about" class="section">
+        <a href="#home">
+            Home
+        </a>
 
-        <h2 class="section-title">
-            About Me
+        <a href="#about">
+            About
+        </a>
+
+        <a href="#services">
+            Services
+        </a>
+
+        <a href="#digital-marketing">
+            Digital Marketing
+        </a>
+
+        <a href="#book">
+            Publications
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HOME
+===================================================== -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <h2>
+            GLOBAL IT PUBLICATION
         </h2>
 
-        <div class="about-container">
 
-            <div class="about-image">
-
-                <!-- Replace my-photo.jpg with your photograph -->
-
-                <img src="images/my-photo.jpg"
-                     alt="Founder of GLOBAL IT PUBLICATION">
-
-            </div>
+        <h3>
+            Creative Solutions for Your Digital Growth
+        </h3>
 
 
-            <div class="about-content">
+        <div class="hero-profile">
 
-                <h2>
-                    Welcome to GLOBAL IT PUBLICATION
-                </h2>
-
-                <p>
-                    I am a Computer Trainer and Digital Skills Professional
-                    with an interest in technology, digital marketing,
-                    web designing, graphics designing and data analysis.
-                </p>
-
-                <p>
-                    Through GLOBAL IT PUBLICATION, I provide practical
-                    digital solutions and training-oriented services
-                    for individuals, students, educational institutions
-                    and businesses.
-                </p>
-
-                <p>
-                    My objective is to combine technology, creativity
-                    and data to provide useful and effective digital
-                    solutions.
-                </p>
-
-            </div>
+            Nilesh Janardan Gaikwad
 
         </div>
 
-    </section>
+
+        <div class="hero-qualification">
+
+            MA – Mass Communication & Journalism
+
+        </div>
 
 
-    <!-- ================= SERVICES ================= -->
+        <p>
 
-    <section id="services" class="section services-section">
+            Computer Trainer |
+            Digital Marketing Consultant |
+            Web Developer |
+            Data Analyst
 
-        <h2 class="section-title">
-            Our Services
-        </h2>
-
-        <p class="section-intro">
-            We provide a range of digital and technology-related services.
         </p>
 
 
-        <div class="services-container">
+        <p>
+
+            Graphics Designing |
+            Web Designing |
+            Data Analysis |
+            Digital Marketing
+
+        </p>
 
 
-            <!-- GRAPHICS -->
+        <a href="#contact"
+           class="btn">
 
-            <div class="service-card">
+            Get in Touch
 
-                <div class="service-icon">
-                    🎨
-                </div>
+        </a>
 
-                <h3>
-                    Graphics Designing
-                </h3>
+    </div>
 
-                <p>
-                    Creative designs for businesses,
-                    educational institutions and individuals.
-                </p>
-
-                <ul>
-                    <li>Logo Design</li>
-                    <li>Poster Design</li>
-                    <li>Banner Design</li>
-                    <li>Social Media Posts</li>
-                    <li>Brochure Design</li>
-                </ul>
-
-            </div>
+</section>
 
 
-            <!-- WEB DESIGNING -->
 
-            <div class="service-card">
+<!-- =====================================================
+     ABOUT
+===================================================== -->
 
-                <div class="service-icon">
-                    💻
-                </div>
+<section id="about"
+         class="section">
 
-                <h3>
-                    Web Designing
-                </h3>
+    <h2 class="section-title">
 
-                <p>
-                    Modern and responsive websites for
-                    businesses, professionals and organizations.
-                </p>
+        About Me
 
-                <ul>
-                    <li>Business Websites</li>
-                    <li>Portfolio Websites</li>
-                    <li>Landing Pages</li>
-                    <li>Responsive Design</li>
-                    <li>Website Maintenance</li>
-                </ul>
-
-            </div>
+    </h2>
 
 
-            <!-- DATA ANALYSIS -->
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    📊
-                </div>
-
-                <h3>
-                    Data Analysis
-                </h3>
-
-                <p>
-                    Transforming data into meaningful
-                    information and useful insights.
-                </p>
-
-                <ul>
-                    <li>Excel Data Analysis</li>
-                    <li>Power BI Dashboards</li>
-                    <li>Data Cleaning</li>
-                    <li>Reports</li>
-                    <li>Data Visualization</li>
-                </ul>
-
-            </div>
+    <div class="about-container">
 
 
-            <!-- DIGITAL MARKETING -->
+        <div class="about-image">
 
-            <div class="service-card">
+            <img
+                src="images/my-photo.jpg"
+                alt="Nilesh Janardan Gaikwad - GLOBAL IT PUBLICATION">
 
-                <div class="service-icon">
-                    📱
-                </div>
+        </div>
 
-                <h3>
+
+        <div class="about-content">
+
+            <h2>
+
+                Nilesh Janardan Gaikwad
+
+            </h2>
+
+
+            <h3>
+
+                MA – Mass Communication & Journalism
+
+            </h3>
+
+
+            <p>
+
+                I am a Computer Trainer and Digital Skills
+                Professional with 20+ years of experience
+                in computer education and training.
+
+            </p>
+
+
+            <p>
+
+                I have worked with reputed institutes and have
+                extensive experience in teaching computer
+                applications and digital technologies.
+
+            </p>
+
+
+            <p>
+
+                Along with teaching, I have practical experience
+                in Digital Marketing, Web Development and
+                Data Analytics.
+
+            </p>
+
+
+            <p>
+
+                My professional approach combines
+                <strong>
+                    Technology, Communication and Data
+                </strong>
+                to provide practical learning, digital solutions
+                and industry-oriented services.
+
+            </p>
+
+
+            <p>
+
+                I provide services for students,
+                professionals, educational institutions,
+                businesses and individuals.
+
+            </p>
+
+
+            <div class="profile-tags">
+
+                <span class="profile-tag">
+                    Computer Training
+                </span>
+
+                <span class="profile-tag">
                     Digital Marketing
-                </h3>
+                </span>
 
-                <p>
-                    Digital marketing solutions to improve
-                    online visibility and reach customers.
-                </p>
+                <span class="profile-tag">
+                    Web Development
+                </span>
 
-                <ul>
-                    <li>SEO</li>
-                    <li>Google Ads</li>
-                    <li>Social Media Marketing</li>
-                    <li>Content Marketing</li>
-                    <li>Analytics</li>
-                </ul>
+                <span class="profile-tag">
+                    Data Analysis
+                </span>
 
-            </div>
+                <span class="profile-tag">
+                    Power BI
+                </span>
 
-        </div>
-
-    </section>
-
-
-    <!-- ================= DIGITAL MARKETING ================= -->
-
-    <section id="digital-marketing" class="section">
-
-        <h2 class="section-title">
-            Digital Marketing Services
-        </h2>
-
-        <div class="digital-container">
-
-
-            <div class="digital-card">
-
-                <h3>SEO</h3>
-
-                <p>
-                    Search Engine Optimization to improve
-                    website visibility in search engines.
-                </p>
-
-            </div>
-
-
-            <div class="digital-card">
-
-                <h3>Google Ads</h3>
-
-                <p>
-                    Search and online advertising campaigns
-                    to reach potential customers.
-                </p>
-
-            </div>
-
-
-            <div class="digital-card">
-
-                <h3>Social Media Marketing</h3>
-
-                <p>
-                    Facebook and Instagram marketing,
-                    content planning and audience engagement.
-                </p>
-
-            </div>
-
-
-            <div class="digital-card">
-
-                <h3>Content Marketing</h3>
-
-                <p>
-                    Creating useful content to attract,
-                    engage and retain audiences.
-                </p>
-
-            </div>
-
-
-            <div class="digital-card">
-
-                <h3>Google Analytics</h3>
-
-                <p>
-                    Website traffic and user behaviour
-                    analysis using analytics tools.
-                </p>
-
-            </div>
-
-
-            <div class="digital-card">
-
-                <h3>Google Search Console</h3>
-
-                <p>
-                    Monitoring website search performance,
-                    indexing and search visibility.
-                </p>
-
-            </div>
-
-
-            <div class="digital-card">
-
-                <h3>Email Marketing</h3>
-
-                <p>
-                    Promotional and informational email
-                    campaigns for businesses.
-                </p>
-
-            </div>
-
-
-            <div class="digital-card">
-
-                <h3>Website Analytics</h3>
-
-                <p>
-                    Understanding website performance
-                    through data and reports.
-                </p>
+                <span class="profile-tag">
+                    Publishing
+                </span>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= BOOK ================= -->
 
-    <section id="book" class="book-section">
+<!-- =====================================================
+     SERVICES
+===================================================== -->
 
-        <h2 class="section-title">
-            Our Publication
-        </h2>
+<section id="services"
+         class="section services-section">
 
 
-        <div class="book-container">
+    <h2 class="section-title">
+
+        Our Services
+
+    </h2>
+
+
+    <p class="section-intro">
+
+        Digital and technology-related services
+        for businesses, professionals,
+        educational institutions and individuals.
+
+    </p>
+
+
+    <div class="services-container">
+
+
+        <!-- GRAPHICS -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                🎨
+            </div>
+
+            <h3>
+                Graphics Designing
+            </h3>
+
+            <p>
+
+                Creative designs for businesses,
+                educational institutions and individuals.
+
+            </p>
+
+
+            <ul>
+
+                <li>Logo Design</li>
+
+                <li>Poster Design</li>
+
+                <li>Banner Design</li>
+
+                <li>Social Media Posts</li>
+
+                <li>Brochure Design</li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- WEB DESIGNING -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                💻
+            </div>
+
+            <h3>
+                Web Designing
+            </h3>
+
+            <p>
+
+                Modern and responsive websites for
+                businesses, professionals and organizations.
+
+            </p>
+
+
+            <ul>
+
+                <li>Business Websites</li>
+
+                <li>Portfolio Websites</li>
+
+                <li>Landing Pages</li>
+
+                <li>Responsive Design</li>
+
+                <li>Website Maintenance</li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- DATA ANALYSIS -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                📊
+            </div>
+
+            <h3>
+                Data Analysis
+            </h3>
+
+            <p>
+
+                Transforming data into meaningful
+                information and useful insights.
+
+            </p>
+
+
+            <ul>
+
+                <li>Excel Data Analysis</li>
+
+                <li>Power BI Dashboards</li>
+
+                <li>Data Cleaning</li>
+
+                <li>Reports</li>
+
+                <li>Data Visualization</li>
+
+            </ul>
+
+        </div>
+
+
+
+        <!-- DIGITAL MARKETING -->
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                📱
+            </div>
+
+            <h3>
+                Digital Marketing
+            </h3>
+
+            <p>
+
+                Digital marketing solutions to improve
+                online visibility and reach customers.
+
+            </p>
+
+
+            <ul>
+
+                <li>SEO</li>
+
+                <li>Google Ads</li>
+
+                <li>Social Media Marketing</li>
+
+                <li>Content Marketing</li>
+
+                <li>Analytics</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     DIGITAL MARKETING
+===================================================== -->
+
+<section id="digital-marketing"
+         class="section">
+
+
+    <h2 class="section-title">
+
+        Digital Marketing Services
+
+    </h2>
+
+
+    <div class="digital-container">
+
+
+        <div class="digital-card">
+
+            <h3>
+                SEO
+            </h3>
+
+            <p>
+
+                Search Engine Optimization to improve
+                website visibility in search engines.
+
+            </p>
+
+        </div>
+
+
+        <div class="digital-card">
+
+            <h3>
+                Google Ads
+            </h3>
+
+            <p>
+
+                Search and online advertising campaigns
+                to reach potential customers.
+
+            </p>
+
+        </div>
+
+
+        <div class="digital-card">
+
+            <h3>
+                Social Media Marketing
+            </h3>
+
+            <p>
+
+                Facebook and Instagram marketing,
+                content planning and audience engagement.
+
+            </p>
+
+        </div>
+
+
+        <div class="digital-card">
+
+            <h3>
+                Content Marketing
+            </h3>
+
+            <p>
+
+                Creating useful content to attract,
+                engage and retain audiences.
+
+            </p>
+
+        </div>
+
+
+        <div class="digital-card">
+
+            <h3>
+                Google Analytics
+            </h3>
+
+            <p>
+
+                Website traffic and user behaviour
+                analysis using analytics tools.
+
+            </p>
+
+        </div>
+
+
+        <div class="digital-card">
+
+            <h3>
+                Google Search Console
+            </h3>
+
+            <p>
+
+                Monitoring website search performance,
+                indexing and search visibility.
+
+            </p>
+
+        </div>
+
+
+        <div class="digital-card">
+
+            <h3>
+                Email Marketing
+            </h3>
+
+            <p>
+
+                Promotional and informational email
+                campaigns for businesses.
+
+            </p>
+
+        </div>
+
+
+        <div class="digital-card">
+
+            <h3>
+                Website Analytics
+            </h3>
+
+            <p>
+
+                Understanding website performance
+                through data and reports.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PUBLICATIONS
+===================================================== -->
+
+<section id="book"
+         class="book-section">
+
+
+    <h2 class="section-title">
+
+        Our Publications
+
+    </h2>
+
+
+    <p class="section-intro">
+
+        Published and upcoming books from
+        GLOBAL IT PUBLICATION.
+
+    </p>
+
+
+    <div class="books-container">
+
+
+
+        <!-- =================================================
+             BOOK 1
+        ================================================== -->
+
+        <div class="book-card">
 
 
             <div class="book-image">
 
-                <!-- Replace with actual book cover -->
-
-                <img src="images/parv-usheche.jpg"
-                     alt="Parv Usheche Book">
+                <img
+                    src="images/parv-usheche.jpg"
+                    alt="पर्व उषेचे - Marathi Poetry Collection">
 
             </div>
 
@@ -386,34 +1995,49 @@
                     पर्व उषेचे
                 </h2>
 
+
                 <h3>
                     Parv Usheche
                 </h3>
 
+
                 <p class="book-subtitle">
+
                     काव्यसंग्रह
+
                 </p>
 
-                <p>
-                    <strong>पर्व उषेचे</strong> हा विद्यार्थ्यांसाठी
-                    उपयुक्त असा काव्यसंग्रह आहे.
-                </p>
 
                 <p>
+
+                    <strong>
+                        पर्व उषेचे
+                    </strong>
+                    हा विद्यार्थ्यांसाठी उपयुक्त असा
+                    काव्यसंग्रह आहे.
+
+                </p>
+
+
+                <p>
+
                     या पुस्तकामध्ये विद्यार्थ्यांना प्रेरणा,
                     जीवनमूल्ये, निसर्ग, शिक्षण आणि सामाजिक
                     जाणिवांशी संबंधित काव्यरचना वाचायला मिळतात.
+
                 </p>
 
 
                 <div class="book-details">
 
                     <p>
-                        <strong>Pages:</strong> 82
+                        <strong>Pages:</strong>
+                        82
                     </p>
 
                     <p>
-                        <strong>Size:</strong> A5
+                        <strong>Size:</strong>
+                        A5
                     </p>
 
                     <p>
@@ -424,167 +2048,803 @@
                 </div>
 
 
-                <a href="#contact" class="btn">
+                <a href="#contact"
+                   class="btn">
+
                     Enquire About Book
+
                 </a>
 
             </div>
 
         </div>
 
-    </section>
 
 
-    <!-- ================= WHY CHOOSE US ================= -->
+        <!-- =================================================
+             UPCOMING PUBLICATIONS
+        ================================================== -->
 
-    <section class="section">
-
-        <h2 class="section-title">
-            Why Choose Us?
-        </h2>
+        <div class="book-card">
 
 
-        <div class="why-container">
+            <div class="book-image">
 
-            <div class="why-card">
-
-                <h3>
-                    Practical Approach
-                </h3>
-
-                <p>
-                    We focus on practical and useful
-                    technology solutions.
-                </p>
+                <img
+                    src="images/book-2.jpg"
+                    alt="Upcoming Publication - GLOBAL IT PUBLICATION">
 
             </div>
 
 
-            <div class="why-card">
+            <div class="book-content">
+
+                <h2>
+                    Coming Soon
+                </h2>
+
 
                 <h3>
-                    Multiple Digital Services
+                    Upcoming Publication
                 </h3>
 
-                <p>
-                    Graphics, websites, data and
-                    digital marketing under one roof.
+
+                <p class="book-subtitle">
+
+                    New Book
+
                 </p>
 
-            </div>
-
-
-            <div class="why-card">
-
-                <h3>
-                    Creative Solutions
-                </h3>
 
                 <p>
-                    Combining creativity with technology
-                    to create effective solutions.
+
+                    A new publication from
+                    GLOBAL IT PUBLICATION.
+
                 </p>
 
-            </div>
-
-
-            <div class="why-card">
-
-                <h3>
-                    Client Focused
-                </h3>
 
                 <p>
-                    Solutions are designed according to
-                    the needs of clients.
+
+                    पुस्तक प्रकाशित झाल्यानंतर येथे
+                    पुस्तकाचे नाव, लेखक, विषय,
+                    ISBN आणि इतर माहिती सहजपणे
+                    अपडेट करता येईल.
+
                 </p>
+
+
+                <div class="book-details">
+
+                    <p>
+                        <strong>Pages:</strong>
+                        Coming Soon
+                    </p>
+
+                    <p>
+                        <strong>Size:</strong>
+                        Coming Soon
+                    </p>
+
+                    <p>
+                        <strong>ISBN:</strong>
+                        Coming Soon
+                    </p>
+
+                </div>
+
+
+                <a href="#contact"
+                   class="btn">
+
+                    More Information
+
+                </a>
 
             </div>
 
         </div>
 
-    </section>
+
+    </div>
+
+</section>
 
 
-    <!-- ================= CONTACT ================= -->
 
-    <section id="contact" class="contact-section">
+<!-- =====================================================
+     WHY CHOOSE US
+===================================================== -->
 
-        <h2 class="section-title">
-            Contact Us
-        </h2>
+<section class="section">
 
-        <div class="contact-container">
 
-            <div>
+    <h2 class="section-title">
 
-                <h3>
-                    GLOBAL IT PUBLICATION
-                </h3>
+        Why Choose Us?
 
-                <p>
-                    Graphics | Web Designing |
-                    Data Analysis | Digital Marketing
-                </p>
+    </h2>
 
-                <p>
-                    📞 Mobile: YOUR MOBILE NUMBER
-                </p>
 
-                <p>
-                    ✉ Email: YOUR EMAIL ADDRESS
-                </p>
+    <div class="why-container">
 
-                <p>
-                    📍 Location: YOUR LOCATION
-                </p>
+
+        <div class="why-card">
+
+            <h3>
+                Practical Approach
+            </h3>
+
+            <p>
+
+                We focus on practical and useful
+                technology solutions.
+
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <h3>
+                Multiple Digital Services
+            </h3>
+
+            <p>
+
+                Graphics, websites, data and
+                digital marketing under one roof.
+
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <h3>
+                Creative Solutions
+            </h3>
+
+            <p>
+
+                Combining creativity with technology
+                to create effective solutions.
+
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <h3>
+                Client Focused
+            </h3>
+
+            <p>
+
+                Solutions are designed according
+                to the needs of clients.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section id="contact"
+         class="contact-section">
+
+
+    <h2 class="section-title">
+
+        Contact Us
+
+    </h2>
+
+
+    <div class="contact-container">
+
+
+        <!-- =================================================
+             CONTACT INFORMATION
+        ================================================== -->
+
+        <div>
+
+            <h3>
+                GLOBAL IT PUBLICATION
+            </h3>
+
+
+            <p>
+
+                Graphics |
+                Web Designing |
+                Data Analysis |
+                Digital Marketing |
+                Publishing
+
+            </p>
+
+
+            <p>
+
+                📞 Mobile:
+                <strong>
+                    9892774735
+                </strong>
+
+            </p>
+
+
+            <p>
+
+                ✉ Email:
+                <strong>
+                    nileshsakhalolkar@gmail.com
+                </strong>
+
+            </p>
+
+
+            <p>
+
+                📍 Location:
+                Maharashtra, India
+
+            </p>
+
+
+            <p>
+
+                <strong>
+                    Services Available Online
+                </strong>
+
+            </p>
+
+
+            <div class="contact-buttons">
+
+
+                <!-- CALL -->
+
+                <a
+                    href="tel:+919892774735"
+                    class="contact-btn"
+                    id="call-button">
+
+                    📞 Call Now
+
+                </a>
+
+
+                <!-- WHATSAPP -->
+
+                <a
+                    href="https://wa.me/919892774735"
+                    target="_blank"
+                    rel="noopener"
+                    class="contact-btn"
+                    id="whatsapp-button">
+
+                    💬 WhatsApp
+
+                </a>
+
+
+                <!-- EMAIL -->
+
+                <a
+                    href="mailto:nileshsakhalolkar@gmail.com"
+                    class="contact-btn"
+                    id="email-button">
+
+                    ✉ Email
+
+                </a>
 
             </div>
 
+        </div>
 
-            <div class="contact-form">
 
-                <input type="text"
-                       placeholder="Your Name">
 
-                <input type="email"
-                       placeholder="Your Email">
+        <!-- =================================================
+             WEB3FORMS CONTACT FORM
+        ================================================== -->
 
-                <input type="text"
-                       placeholder="Mobile Number">
+        <div class="contact-form">
+
+
+            <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                id="contact-form">
+
+
+                <!-- =================================================
+                     IMPORTANT:
+                     REPLACE THIS VALUE WITH YOUR WEB3FORMS ACCESS KEY
+                ================================================== -->
+
+                <input
+                    type="hidden"
+                    name="access_key"
+                    value="15456ed8-a22a-4f93-87fc-601767a572ec">
+
+
+                <!-- EMAIL SUBJECT -->
+
+                <input
+                    type="hidden"
+                    name="subject"
+                    value="New Enquiry - GLOBAL IT PUBLICATION">
+
+
+                <!-- FROM NAME -->
+
+                <input
+                    type="hidden"
+                    name="from_name"
+                    value="GLOBAL IT PUBLICATION Website">
+
+
+                <!-- REPLY TO -->
+
+                <input
+                    type="hidden"
+                    name="replyto"
+                    value="email">
+
+
+                <!-- SPAM PROTECTION -->
+
+                <input
+                    type="checkbox"
+                    name="botcheck"
+                    style="display:none;">
+
+
+                <!-- NAME -->
+
+                <label for="name">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    autocomplete="name"
+                    required>
+
+
+                <!-- EMAIL -->
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required>
+
+
+                <!-- MOBILE -->
+
+                <label for="phone">
+                    Mobile Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your mobile number"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    autocomplete="tel"
+                    required>
+
+
+                <!-- SERVICE -->
+
+                <label for="service">
+                    Service
+                </label>
+
+                <select
+                    id="service"
+                    name="service"
+                    required>
+
+                    <option value="">
+                        Select a Service
+                    </option>
+
+                    <option value="Graphics Designing">
+                        Graphics Designing
+                    </option>
+
+                    <option value="Web Designing">
+                        Web Designing
+                    </option>
+
+                    <option value="Data Analysis">
+                        Data Analysis
+                    </option>
+
+                    <option value="Digital Marketing">
+                        Digital Marketing
+                    </option>
+
+                    <option value="Book Enquiry">
+                        Book Enquiry
+                    </option>
+
+                    <option value="Other">
+                        Other
+                    </option>
+
+                </select>
+
+
+                <!-- MESSAGE -->
+
+                <label for="message">
+                    Message
+                </label>
 
                 <textarea
-                    placeholder="Your Message">
-                </textarea>
+                    id="message"
+                    name="message"
+                    placeholder="Write your message here..."
+                    required></textarea>
 
-                <button>
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    id="submit-button">
+
                     Send Message
+
                 </button>
 
-            </div>
+
+                <!-- RESULT -->
+
+                <div id="form-result"></div>
+
+
+            </form>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= FOOTER ================= -->
 
-    <footer>
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
-        <h3>
-            GLOBAL IT PUBLICATION
-        </h3>
+<footer>
 
-        <p>
-            Graphics • Web Designing • Data Analysis • Digital Marketing
-        </p>
 
-        <p>
-            © 2026 GLOBAL IT PUBLICATION. All Rights Reserved.
-        </p>
+    <h3>
+        GLOBAL IT PUBLICATION
+    </h3>
 
-    </footer>
+
+    <p>
+
+        Graphics • Web Designing •
+        Data Analysis • Digital Marketing • Publishing
+
+    </p>
+
+
+    <p>
+
+        Nilesh Janardan Gaikwad |
+        MA – Mass Communication & Journalism
+
+    </p>
+
+
+    <p>
+
+        © 2026 GLOBAL IT PUBLICATION.
+        All Rights Reserved.
+
+    </p>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
+
+<a
+    href="https://wa.me/919892774735"
+    class="whatsapp"
+    target="_blank"
+    rel="noopener"
+    id="floating-whatsapp"
+    title="Contact us on WhatsApp"
+    aria-label="Contact us on WhatsApp">
+
+    💬
+
+</a>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+    /* =====================================================
+       WEB3FORMS CONTACT FORM
+    ===================================================== */
+
+
+    const form =
+        document.getElementById("contact-form");
+
+
+    const result =
+        document.getElementById("form-result");
+
+
+    const submitButton =
+        document.getElementById("submit-button");
+
+
+    form.addEventListener(
+        "submit",
+        async function(event) {
+
+            event.preventDefault();
+
+
+            submitButton.disabled = true;
+
+
+            submitButton.innerText =
+                "Sending...";
+
+
+            result.style.display =
+                "block";
+
+
+            result.className = "";
+
+
+            result.innerText =
+                "Please wait...";
+
+
+            const formData =
+                new FormData(form);
+
+
+            try {
+
+
+                const response =
+                    await fetch(
+                        "https://api.web3forms.com/submit",
+                        {
+
+                            method: "POST",
+
+                            body: formData
+
+                        }
+                    );
+
+
+                const data =
+                    await response.json();
+
+
+                if (
+                    response.status === 200 &&
+                    data.success
+                ) {
+
+
+                    result.className =
+                        "success-message";
+
+
+                    result.innerText =
+                        "Thank you! Your message has been sent successfully.";
+
+
+                    form.reset();
+
+
+                    /* =================================================
+                       GOOGLE ADS CONVERSION
+
+                       Replace the example code below after
+                       creating a conversion action in Google Ads.
+
+                    Example:
+
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-XXXXXXXXX/XXXXXXXXX'
+                    });
+
+                    ================================================= */
+
+
+                    if (
+                        typeof gtag === "function"
+                    ) {
+
+                        /*
+                        gtag(
+                            'event',
+                            'conversion',
+                            {
+                                'send_to':
+                                'AW-XXXXXXXXX/XXXXXXXXX'
+                            }
+                        );
+                        */
+
+                    }
+
+
+                }
+
+                else {
+
+
+                    result.className =
+                        "error-message";
+
+
+                    result.innerText =
+                        data.message ||
+                        "Something went wrong. Please try again.";
+
+                }
+
+
+            }
+
+            catch (error) {
+
+
+                result.className =
+                    "error-message";
+
+
+                result.innerText =
+                    "Unable to send the message. Please try again or contact us on WhatsApp.";
+
+            }
+
+
+            submitButton.disabled =
+                false;
+
+
+            submitButton.innerText =
+                "Send Message";
+
+
+        }
+    );
+
+
+
+    /* =====================================================
+       GOOGLE ADS - CALL CLICK
+    ===================================================== */
+
+
+    document
+        .getElementById("call-button")
+        .addEventListener(
+            "click",
+            function() {
+
+                /*
+                Add Google Ads conversion event here.
+
+                Example:
+
+                gtag(
+                    'event',
+                    'conversion',
+                    {
+                        'send_to':
+                        'AW-XXXXXXXXX/XXXXXXXXX'
+                    }
+                );
+
+                */
+
+            }
+        );
+
+
+
+    /* =====================================================
+       GOOGLE ADS - WHATSAPP CLICK
+    ===================================================== */
+
+
+    document
+        .getElementById("whatsapp-button")
+        .addEventListener(
+            "click",
+            function() {
+
+                /*
+                Add Google Ads conversion event here
+                after creating your conversion action.
+                */
+
+            }
+        );
+
+
+
+    /* =====================================================
+       FLOATING WHATSAPP CLICK
+    ===================================================== */
+
+
+    document
+        .getElementById("floating-whatsapp")
+        .addEventListener(
+            "click",
+            function() {
+
+                /*
+                Optional Google Ads conversion tracking
+                can be added here.
+                */
+
+            }
+        );
+
+
+</script>
 
 
 </body>
