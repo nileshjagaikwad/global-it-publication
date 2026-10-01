@@ -12,7 +12,8 @@
     </title>
 
     <meta name="description"
-        content="GLOBAL IT PUBLICATION provides Graphics Designing, Website Development, Digital Marketing, Data Analytics, Book Publishing and Educational Services.">
+        content="GLOBAL IT PUBLICATION provides Book Publishing, Graphic Designing, Website Development, Digital Marketing, Data Analytics and Educational Services.">
+
 
     <style>
 
@@ -23,12 +24,14 @@
             scroll-behavior: smooth;
         }
 
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
             color: #222;
             background: #f7f9fc;
         }
+
 
         /* ================= HEADER ================= */
 
@@ -45,27 +48,34 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.15);
         }
 
+
         .logo {
             text-align: left;
         }
 
+
         .logo img {
             max-width: 190px;
+            max-height: 75px;
+            width: auto;
             height: auto;
             display: block;
             margin-bottom: 4px;
         }
+
 
         .logo p {
             font-size: 13px;
             letter-spacing: 1px;
         }
 
+
         nav ul {
             list-style: none;
             display: flex;
             gap: 20px;
         }
+
 
         nav ul li a {
             color: white;
@@ -74,9 +84,11 @@
             font-size: 15px;
         }
 
+
         nav ul li a:hover {
             color: #ffd700;
         }
+
 
 
         /* ================= HERO ================= */
@@ -91,9 +103,11 @@
             background: linear-gradient(135deg, #eaf3ff, #ffffff);
         }
 
+
         .hero-content {
             max-width: 900px;
         }
+
 
         .hero h1 {
             font-size: 46px;
@@ -101,16 +115,19 @@
             margin-bottom: 15px;
         }
 
+
         .hero h2 {
             font-size: 24px;
             color: #333;
             margin-bottom: 20px;
         }
 
+
         .hero p {
             font-size: 18px;
             margin-bottom: 25px;
         }
+
 
         .btn {
             display: inline-block;
@@ -123,9 +140,11 @@
             margin: 5px;
         }
 
+
         .btn:hover {
             background: #0066cc;
         }
+
 
 
         /* ================= GENERAL SECTION ================= */
@@ -133,6 +152,7 @@
         section {
             padding: 70px 7%;
         }
+
 
         .section-title {
             text-align: center;
@@ -142,76 +162,88 @@
         }
 
 
-        /* ================= ABOUT ================= */
+
+        /* ================= ABOUT FOUNDER ================= */
 
         .about-founder {
             background: white;
         }
 
+
         .about-container {
-            max-width: 1100px;
+            max-width: 1150px;
             margin: auto;
-            display: flex;
-            align-items: flex-start;
-            gap: 45px;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 50px;
+            align-items: start;
         }
 
+
         .about-photo {
-            flex: 0 0 280px;
             text-align: center;
         }
+
 
         .about-photo img {
             width: 260px;
             height: 310px;
             object-fit: cover;
             border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.18);
         }
 
+
         .about-content {
-            flex: 1;
+            min-width: 0;
         }
+
 
         .about-content h2 {
             color: #0b3d91;
-            margin-bottom: 8px;
             font-size: 30px;
+            margin-bottom: 5px;
         }
 
-        .about-content h3 {
-            color: #0066cc;
-            margin-top: 22px;
-            margin-bottom: 8px;
-            font-size: 23px;
-        }
 
         .profile-title {
+            color: #555;
             font-size: 18px;
             font-weight: bold;
-            color: #555;
             margin-bottom: 15px;
         }
 
-        .about-content p {
-            margin-bottom: 13px;
-            text-align: justify;
-        }
 
         .identity {
             margin-bottom: 18px;
         }
+
 
         .identity span {
             display: inline-block;
             background: #eef5ff;
             color: #0b3d91;
             padding: 7px 12px;
-            margin: 4px;
+            margin: 3px;
             border-radius: 4px;
             font-size: 14px;
             font-weight: bold;
         }
+
+
+        .about-content p {
+            margin-bottom: 14px;
+            text-align: justify;
+        }
+
+
+        .about-content h3 {
+            color: #0066cc;
+            font-size: 23px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
 
 
         /* ================= SERVICES ================= */
@@ -220,6 +252,7 @@
             background: #f7f9fc;
         }
 
+
         .service-grid {
             max-width: 1100px;
             margin: auto;
@@ -227,6 +260,7 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 25px;
         }
+
 
         .service-card {
             background: white;
@@ -237,19 +271,23 @@
             transition: 0.3s;
         }
 
+
         .service-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 18px rgba(0,0,0,0.15);
         }
+
 
         .service-card h3 {
             color: #0b3d91;
             margin-bottom: 12px;
         }
 
+
         .service-card p {
             font-size: 15px;
         }
+
 
 
         /* ================= DIGITAL MARKETING ================= */
@@ -258,11 +296,13 @@
             background: white;
         }
 
+
         .dm-content {
             max-width: 1000px;
             margin: auto;
             text-align: center;
         }
+
 
         .dm-content h3 {
             font-size: 27px;
@@ -270,9 +310,11 @@
             margin-bottom: 15px;
         }
 
+
         .dm-content p {
             margin-bottom: 15px;
         }
+
 
         .dm-list {
             max-width: 800px;
@@ -280,9 +322,11 @@
             text-align: left;
         }
 
+
         .dm-list li {
             margin-bottom: 8px;
         }
+
 
 
         /* ================= PUBLICATIONS ================= */
@@ -290,6 +334,7 @@
         .publications {
             background: #f7f9fc;
         }
+
 
         .book-grid {
             max-width: 1000px;
@@ -299,6 +344,7 @@
             gap: 35px;
         }
 
+
         .book-card {
             background: white;
             border-radius: 10px;
@@ -306,6 +352,7 @@
             text-align: center;
             box-shadow: 0 3px 15px rgba(0,0,0,0.1);
         }
+
 
         .book-card img {
             width: 220px;
@@ -316,14 +363,17 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
+
         .book-card h3 {
             color: #0b3d91;
             margin-bottom: 10px;
         }
 
+
         .book-card p {
             margin-bottom: 10px;
         }
+
 
         .book-price {
             font-weight: bold;
@@ -332,11 +382,13 @@
         }
 
 
+
         /* ================= WHY CHOOSE US ================= */
 
         .why-us {
             background: white;
         }
+
 
         .why-grid {
             max-width: 1000px;
@@ -346,6 +398,7 @@
             gap: 25px;
         }
 
+
         .why-card {
             background: #f7f9fc;
             padding: 25px;
@@ -353,10 +406,12 @@
             border-radius: 5px;
         }
 
+
         .why-card h3 {
             color: #0b3d91;
             margin-bottom: 8px;
         }
+
 
 
         /* ================= CONTACT ================= */
@@ -365,25 +420,30 @@
             background: #eef5ff;
         }
 
+
         .contact-container {
             max-width: 900px;
             margin: auto;
             text-align: center;
         }
 
+
         .contact-container h3 {
             color: #0b3d91;
             margin-bottom: 15px;
         }
 
+
         .contact-container p {
             margin-bottom: 8px;
         }
+
 
         form {
             max-width: 650px;
             margin: 30px auto 0;
         }
+
 
         form input,
         form textarea {
@@ -395,15 +455,18 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+
         form textarea {
             min-height: 130px;
             resize: vertical;
         }
 
+
         form button {
             border: none;
             cursor: pointer;
         }
+
 
 
         /* ================= FOOTER ================= */
@@ -415,9 +478,11 @@
             padding: 25px 15px;
         }
 
+
         footer p {
             margin: 5px 0;
         }
+
 
 
         /* ================= WHATSAPP ================= */
@@ -441,24 +506,28 @@
         }
 
 
-        /* ================= MOBILE ================= */
+
+        /* ================= TABLET ================= */
 
         @media (max-width: 900px) {
 
             header {
                 flex-direction: column;
-                gap: 12px;
+                gap: 15px;
                 text-align: center;
             }
+
 
             .logo {
                 text-align: center;
             }
 
+
             .logo img {
                 margin-left: auto;
                 margin-right: auto;
             }
+
 
             nav ul {
                 flex-wrap: wrap;
@@ -466,36 +535,33 @@
                 gap: 12px;
             }
 
+
             .hero h1 {
-                font-size: 34px;
+                font-size: 36px;
             }
 
-            .hero h2 {
-                font-size: 21px;
+
+            .about-container {
+                grid-template-columns: 220px 1fr;
+                gap: 30px;
             }
+
+
+            .about-photo img {
+                width: 210px;
+                height: 260px;
+            }
+
 
             .service-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .about-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .about-content {
-                width: 100%;
-            }
-
-            .book-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .why-grid {
-                grid-template-columns: 1fr;
-            }
         }
 
+
+
+        /* ================= MOBILE ================= */
 
         @media (max-width: 600px) {
 
@@ -503,40 +569,95 @@
                 padding: 50px 5%;
             }
 
+
             .section-title {
                 font-size: 28px;
             }
+
+
+            .hero {
+                min-height: 430px;
+            }
+
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+
+            .hero p {
+                font-size: 16px;
+            }
+
+
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+
+            .about-photo {
+                width: 100%;
+            }
+
+
+            .about-photo img {
+                width: 220px;
+                height: 270px;
+            }
+
+
+            .about-content h2 {
+                font-size: 26px;
+            }
+
+
+            .about-content p {
+                text-align: left;
+            }
+
 
             .service-grid {
                 grid-template-columns: 1fr;
             }
 
-            .about-photo img {
-                width: 220px;
-                height: 260px;
+
+            .book-grid {
+                grid-template-columns: 1fr;
             }
+
 
             .book-card img {
                 width: 190px;
                 height: 260px;
             }
 
-            .hero {
-                min-height: 430px;
+
+            .why-grid {
+                grid-template-columns: 1fr;
             }
 
-            .hero h1 {
-                font-size: 29px;
+
+            nav ul {
+                gap: 8px;
             }
 
-            .hero p {
-                font-size: 16px;
+
+            nav ul li a {
+                font-size: 13px;
             }
+
         }
 
     </style>
 
 </head>
+
 
 
 <body>
@@ -548,13 +669,20 @@
 
         <div class="logo">
 
-            <!-- YOUR LOGO IMAGE HERE -->
-            <!-- तुमच्या Logo चे actual image नाव खाली टाका -->
+            <!--
+            येथे तुमच्या GLOBAL IT PUBLICATIONS
+            Logo ची image टाका.
+
+            फक्त खालील नाव बदला:
+            YOUR-LOGO-NAME.png
+            -->
 
             <img src="images/YOUR-LOGO-NAME.png"
                  alt="GLOBAL IT PUBLICATIONS Logo">
 
-            <p>Creative • Digital • Data • Publishing</p>
+            <p>
+                Creative • Digital • Data • Publishing
+            </p>
 
         </div>
 
@@ -563,17 +691,29 @@
 
             <ul>
 
-                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
 
-                <li><a href="#about-founder">About</a></li>
+                <li>
+                    <a href="#about-founder">About</a>
+                </li>
 
-                <li><a href="#services">Services</a></li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
 
-                <li><a href="#digital-marketing">Digital Marketing</a></li>
+                <li>
+                    <a href="#digital-marketing">Digital Marketing</a>
+                </li>
 
-                <li><a href="#publications">Publications</a></li>
+                <li>
+                    <a href="#publications">Publications</a>
+                </li>
 
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
 
             </ul>
 
@@ -589,15 +729,18 @@
 
         <div class="hero-content">
 
-            <h1>GLOBAL IT PUBLICATION</h1>
+            <h1>
+                GLOBAL IT PUBLICATION
+            </h1>
 
             <h2>
                 Creative • Digital • Data • Publishing
             </h2>
 
             <p>
-                Book Publishing, Graphic Designing, Website Development,
-                Digital Marketing, Data Analytics and Educational Initiatives
+                Book Publishing, Graphic Designing,
+                Website Development, Digital Marketing,
+                Data Analytics and Educational Initiatives
                 under one platform.
             </p>
 
@@ -627,11 +770,9 @@
         <div class="about-container">
 
 
-            <!-- PHOTO -->
+            <!-- ONLY ONE PHOTO -->
 
             <div class="about-photo">
-
-                <!-- ORIGINAL PHOTO NAME – DO NOT CHANGE -->
 
                 <img src="images/my-photo.jpg"
                      alt="Nilesh Janardan Gaikwad">
@@ -640,13 +781,14 @@
 
 
 
-            <!-- INFORMATION -->
+            <!-- ONLY ONE INFORMATION BLOCK -->
 
             <div class="about-content">
 
                 <h2>
                     Nilesh Janardan Gaikwad
                 </h2>
+
 
                 <p class="profile-title">
                     Founder & Publisher – GLOBAL IT PUBLICATIONS
@@ -703,9 +845,6 @@
                 </p>
 
 
-
-                <!-- AS A POET -->
-
                 <h3>
                     As a Poet & Author
                 </h3>
@@ -735,9 +874,6 @@
                     Poet – Nilesh Janardan Gaikwad
                 </p>
 
-
-
-                <!-- AS AN AUTHOR -->
 
                 <h3>
                     As an Author
@@ -979,11 +1115,9 @@
         <div class="book-grid">
 
 
-            <!-- PARV USHECHE -->
+            <!-- BOOK 1 -->
 
             <div class="book-card">
-
-                <!-- ORIGINAL BOOK IMAGE NAME – DO NOT CHANGE -->
 
                 <img src="images/parv-usheche.jpg"
                      alt="Parv Usheche Marathi Poetry Collection">
@@ -1022,16 +1156,13 @@
                     ISBN: 978-93-5916-684-1
                 </p>
 
-
             </div>
 
 
 
-            <!-- DIGITAL MARKETING BOOK -->
+            <!-- BOOK 2 -->
 
             <div class="book-card">
-
-                <!-- ORIGINAL BOOK IMAGE NAME – DO NOT CHANGE -->
 
                 <img src="images/digital-marketing.jpg"
                      alt="Digital Marketing Book">
@@ -1067,7 +1198,6 @@
                 <p class="book-price">
                     ISBN: 978-93-345-0104-9
                 </p>
-
 
             </div>
 
@@ -1179,8 +1309,6 @@
                   method="POST">
 
 
-                <!-- Web3Forms Access Key -->
-
                 <input type="hidden"
                        name="access_key"
                        value="15456ed8-a22a-4f93-87fc-601767a572ec">
@@ -1211,7 +1339,9 @@
 
                 <button type="submit"
                         class="btn">
+
                     Send Message
+
                 </button>
 
 
