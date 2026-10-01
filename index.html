@@ -23,11 +23,12 @@
     <meta name="robots"
         content="index, follow">
 
-    <!--
-    =========================================================
-    GOOGLE ANALYTICS / GOOGLE ADS
-    =========================================================
 
+    <!-- =====================================================
+         GOOGLE ANALYTICS / GOOGLE ADS
+    ===================================================== -->
+
+    <!--
     Add your Google Tag here after creating it.
 
     Example:
@@ -45,8 +46,6 @@
 
         gtag('config', 'G-XXXXXXXXXX');
     </script>
-
-    =========================================================
     -->
 
 
@@ -123,11 +122,23 @@
         }
 
 
-        .logo h1 {
+        .logo {
 
-            font-size: 25px;
+            display: flex;
 
-            letter-spacing: 1px;
+            flex-direction: column;
+
+            align-items: flex-start;
+        }
+
+
+        .site-logo {
+
+            width: 180px;
+
+            height: auto;
+
+            margin-bottom: 5px;
         }
 
 
@@ -365,7 +376,7 @@
            ABOUT
         ===================================================== */
 
-        .about-container {
+        #about .about-container {
 
             max-width: 1100px;
 
@@ -373,7 +384,7 @@
 
             display: flex;
 
-            align-items: center;
+            align-items: flex-start;
 
             gap: 50px;
 
@@ -388,15 +399,17 @@
         }
 
 
-        .about-image {
+        #about .about-image {
 
-            flex: 1;
+            flex: 0 0 260px;
 
             text-align: center;
+
+            padding-top: 5px;
         }
 
 
-        .about-image img {
+        #about .about-image img {
 
             width: 260px;
 
@@ -415,13 +428,15 @@
         }
 
 
-        .about-content {
+        #about .about-content {
 
-            flex: 2;
+            flex: 1;
+
+            min-width: 0;
         }
 
 
-        .about-content h2 {
+        #about .about-content h2 {
 
             color: #4b6cb7;
 
@@ -429,7 +444,7 @@
         }
 
 
-        .about-content h3 {
+        #about .about-content h3 {
 
             color: #dd2476;
 
@@ -437,15 +452,117 @@
         }
 
 
-        .about-content p {
+        #about .designation {
+
+            font-size: 18px;
+
+            font-weight: 600;
+
+            color: #333;
+
+            margin-bottom: 8px;
+        }
+
+
+        #about .qualification {
+
+            font-size: 17px;
+
+            margin-bottom: 25px;
+
+            color: #333;
+        }
+
+
+        #about .about-content p {
 
             margin-bottom: 18px;
 
             color: #444;
+
+            line-height: 1.8;
         }
 
 
-        .profile-tags {
+        #about .sub-heading {
+
+            margin-top: 35px;
+
+            padding-bottom: 8px;
+
+            border-bottom: 2px solid #e1e5ec;
+
+            color: #4b6cb7;
+        }
+
+
+        #about .book-box {
+
+            margin: 25px 0;
+
+            padding: 22px;
+
+            background: #f1f5f9;
+
+            border-left: 5px solid #4b6cb7;
+
+            border-radius: 8px;
+        }
+
+
+        #about .book-box h3 {
+
+            margin-top: 0;
+
+            margin-bottom: 8px;
+
+            color: #dd2476;
+        }
+
+
+        #about .book-box p {
+
+            margin-bottom: 6px;
+        }
+
+
+        #about .book-title {
+
+            font-size: 23px;
+
+            margin-top: 15px;
+
+            margin-bottom: 15px;
+
+            color: #4b6cb7;
+        }
+
+
+        #about .quote-box {
+
+            margin: 25px 0;
+
+            padding: 20px 25px;
+
+            background: #f8f8f8;
+
+            border-left: 5px solid #dd2476;
+
+            border-radius: 8px;
+        }
+
+
+        #about .quote-box p {
+
+            margin: 0;
+
+            font-size: 18px;
+
+            line-height: 1.6;
+        }
+
+
+        #about .profile-tags {
 
             display: flex;
 
@@ -453,11 +570,11 @@
 
             gap: 10px;
 
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
 
-        .profile-tag {
+        #about .profile-tag {
 
             background: #eef3ff;
 
@@ -1216,6 +1333,18 @@
             }
 
 
+            .logo {
+
+                align-items: center;
+            }
+
+
+            .site-logo {
+
+                width: 160px;
+            }
+
+
             nav {
 
                 justify-content: center;
@@ -1248,17 +1377,56 @@
             }
 
 
-            .about-container {
+            #about .about-container {
 
                 flex-direction: column;
 
                 text-align: center;
+
+                padding: 25px;
+
+                gap: 30px;
             }
 
 
-            .profile-tags {
+            #about .about-image {
+
+                flex: none;
+
+                width: 100%;
+            }
+
+
+            #about .about-image img {
+
+                width: 220px;
+
+                height: 260px;
+            }
+
+
+            #about .about-content {
+
+                width: 100%;
+            }
+
+
+            #about .profile-tags {
 
                 justify-content: center;
+            }
+
+
+            #about .about-content p {
+
+                text-align: left;
+            }
+
+
+            #about .about-content h2,
+            #about .about-content h3 {
+
+                text-align: center;
             }
 
 
@@ -1312,13 +1480,13 @@
             }
 
 
-            .about-container {
+            #about .about-container {
 
                 padding: 25px;
             }
 
 
-            .about-image img {
+            #about .about-image img {
 
                 width: 220px;
 
@@ -1366,7 +1534,6 @@
 </head>
 
 
-
 <body>
 
 
@@ -1378,9 +1545,16 @@
 
     <div class="logo">
 
-        <h1>
-            GLOBAL IT PUBLICATION
-        </h1>
+        <!-- =================================================
+             WEBSITE LOGO
+             तुमच्या Logo चे filename येथे बदला
+        ================================================== -->
+
+        <img
+            src="images/global-it-publications-logo.png"
+            alt="GLOBAL IT PUBLICATIONS Logo"
+            class="site-logo">
+
 
         <p>
             Creative • Digital • Data • Publishing
@@ -1503,33 +1677,6 @@
     <div class="about-container">
 
 
-        <div class="about-image">
-
-            <img
-                src="images/my-photo.jpg"
-                alt="Nilesh Janardan Gaikwad - GLOBAL IT PUBLICATION">
-
-        </div>
-
-
-        
-<section id="about-founder" class="about-founder">
-
-    <!-- =====================================================
-     ABOUT
-===================================================== -->
-
-<section id="about"
-         class="section">
-
-    <h2 class="section-title">
-        About Me
-    </h2>
-
-
-    <div class="about-container">
-
-
         <!-- =================================================
              LEFT SIDE - PHOTO
         ================================================== -->
@@ -1537,15 +1684,14 @@
         <div class="about-image">
 
             <!--
-                YOUR PHOTO
                 येथे तुमच्या फोटोचे नाव द्या.
 
                 Example:
+
                 images/nilesh.jpg
 
-                किंवा
-
-                nilesh-janardan-gaikwad.jpg
+                सध्या:
+                images/YOUR-PHOTO-NAME.jpg
             -->
 
             <img
@@ -1555,8 +1701,9 @@
         </div>
 
 
+
         <!-- =================================================
-             RIGHT SIDE - IDENTITY
+             RIGHT SIDE - FOUNDER / AUTHOR DETAILS
         ================================================== -->
 
         <div class="about-content">
@@ -1588,6 +1735,7 @@
                 </strong>
 
             </p>
+
 
 
             <!-- =================================================
@@ -1637,12 +1785,15 @@
             </p>
 
 
+
             <!-- =================================================
                  AS A POET & AUTHOR
             ================================================== -->
 
             <h3 class="sub-heading">
+
                 As a Poet &amp; Author
+
             </h3>
 
 
@@ -1670,6 +1821,7 @@
             </p>
 
 
+
             <!-- =================================================
                  POETRY BOOK
             ================================================== -->
@@ -1681,19 +1833,24 @@
                 </h3>
 
                 <p>
+
                     <strong>
                         पर्व उषेचे — Marathi Poetry Collection
                     </strong>
+
                 </p>
 
                 <p>
+
                     Poet –
                     <strong>
                         Nilesh Janardan Gaikwad
                     </strong>
+
                 </p>
 
             </div>
+
 
 
             <!-- =================================================
@@ -1701,7 +1858,9 @@
             ================================================== -->
 
             <h3 class="sub-heading">
+
                 As an Author
+
             </h3>
 
 
@@ -1727,8 +1886,10 @@
                 <p>
 
                     <strong>
+
                         “Every Practical — Step-by-Step,
                         in Simple Language and with Screenshots!”
+
                     </strong>
 
                 </p>
@@ -1781,6 +1942,7 @@
             </p>
 
 
+
             <!-- =================================================
                  PROFILE TAGS
             ================================================== -->
@@ -1813,521 +1975,6 @@
 
             </div>
 
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     ABOUT FOUNDER CSS
-     ONLY FOR THIS SECTION
-===================================================== -->
-
-<style>
-
-    .about-founder {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-
-    /* Main About Container */
-
-    #about .about-container {
-
-        max-width: 1100px;
-
-        margin: auto;
-
-        display: flex;
-
-        align-items: flex-start;
-
-        gap: 50px;
-
-        background: white;
-
-        padding: 40px;
-
-        border-radius: 20px;
-
-        box-shadow:
-            0 10px 30px rgba(0,0,0,0.08);
-
-    }
-
-
-    /* =====================================================
-       LEFT PHOTO
-    ===================================================== */
-
-    #about .about-image {
-
-        flex: 0 0 260px;
-
-        text-align: center;
-
-        padding-top: 5px;
-
-    }
-
-
-    #about .about-image img {
-
-        width: 260px;
-
-        height: 300px;
-
-        object-fit: cover;
-
-        border-radius: 20px;
-
-        border: 7px solid #e9efff;
-
-        box-shadow:
-            0 8px 20px rgba(0,0,0,0.15);
-
-        margin: auto;
-
-    }
-
-
-    /* =====================================================
-       RIGHT CONTENT
-    ===================================================== */
-
-    #about .about-content {
-
-        flex: 1;
-
-        min-width: 0;
-
-    }
-
-
-    #about .about-content h2 {
-
-        color: #4b6cb7;
-
-        margin-bottom: 8px;
-
-    }
-
-
-    #about .about-content h3 {
-
-        color: #dd2476;
-
-        margin-bottom: 18px;
-
-    }
-
-
-    #about .designation {
-
-        font-size: 18px;
-
-        font-weight: 600;
-
-        color: #333;
-
-        margin-bottom: 8px;
-
-    }
-
-
-    #about .qualification {
-
-        font-size: 17px;
-
-        margin-bottom: 25px;
-
-        color: #333;
-
-    }
-
-
-    #about .about-content p {
-
-        margin-bottom: 18px;
-
-        color: #444;
-
-        line-height: 1.8;
-
-    }
-
-
-    /* =====================================================
-       SUB HEADINGS
-    ===================================================== */
-
-    #about .sub-heading {
-
-        margin-top: 35px;
-
-        padding-bottom: 8px;
-
-        border-bottom: 2px solid #e1e5ec;
-
-        color: #4b6cb7;
-
-    }
-
-
-    /* =====================================================
-       POETRY BOOK BOX
-    ===================================================== */
-
-    #about .book-box {
-
-        margin: 25px 0;
-
-        padding: 22px;
-
-        background: #f1f5f9;
-
-        border-left: 5px solid #4b6cb7;
-
-        border-radius: 8px;
-
-    }
-
-
-    #about .book-box h3 {
-
-        margin-top: 0;
-
-        margin-bottom: 8px;
-
-        color: #dd2476;
-
-    }
-
-
-    #about .book-box p {
-
-        margin-bottom: 6px;
-
-    }
-
-
-    /* =====================================================
-       DIGITAL MARKETING BOOK
-    ===================================================== */
-
-    #about .book-title {
-
-        font-size: 23px;
-
-        margin-top: 15px;
-
-        margin-bottom: 15px;
-
-        color: #4b6cb7;
-
-    }
-
-
-    #about .quote-box {
-
-        margin: 25px 0;
-
-        padding: 20px 25px;
-
-        background: #f8f8f8;
-
-        border-left: 5px solid #dd2476;
-
-        border-radius: 8px;
-
-    }
-
-
-    #about .quote-box p {
-
-        margin: 0;
-
-        font-size: 18px;
-
-        line-height: 1.6;
-
-    }
-
-
-    /* =====================================================
-       PROFILE TAGS
-    ===================================================== */
-
-    #about .profile-tags {
-
-        display: flex;
-
-        flex-wrap: wrap;
-
-        gap: 10px;
-
-        margin-top: 25px;
-
-    }
-
-
-    #about .profile-tag {
-
-        background: #eef3ff;
-
-        color: #182848;
-
-        padding: 7px 12px;
-
-        border-radius: 20px;
-
-        font-size: 13px;
-
-        font-weight: bold;
-
-    }
-
-
-    /* =====================================================
-       MOBILE
-    ===================================================== */
-
-    @media (max-width: 768px) {
-
-        #about .about-container {
-
-            flex-direction: column;
-
-            text-align: center;
-
-            padding: 25px;
-
-            gap: 30px;
-
-        }
-
-
-        #about .about-image {
-
-            flex: none;
-
-            width: 100%;
-
-        }
-
-
-        #about .about-image img {
-
-            width: 220px;
-
-            height: 260px;
-
-        }
-
-
-        #about .about-content {
-
-            width: 100%;
-
-        }
-
-
-        #about .profile-tags {
-
-            justify-content: center;
-
-        }
-
-
-        #about .about-content p {
-
-            text-align: left;
-
-        }
-
-
-        #about .about-content h2,
-        #about .about-content h3 {
-
-            text-align: center;
-
-        }
-
-    }
-
-</style>
-</section>
-
-
-<!-- =========================
-     CSS
-     ========================= -->
-
-<style>
-
-.about-founder {
-    padding: 60px 20px;
-    background: #f8f9fa;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.about-container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.about-content {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-}
-
-.about-content h2 {
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-size: 34px;
-    color: #222;
-}
-
-.about-content h3 {
-    margin-top: 8px;
-    margin-bottom: 10px;
-    font-size: 21px;
-    color: #333;
-}
-
-.designation {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 12px 0;
-}
-
-.qualification {
-    font-size: 17px;
-    margin-bottom: 25px;
-}
-
-.about-content p {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #444;
-    margin-bottom: 18px;
-}
-
-.section-title {
-    margin-top: 35px !important;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #ddd;
-}
-
-.book-box {
-    margin: 25px 0;
-    padding: 22px;
-    background: #f1f5f9;
-    border-left: 5px solid #333;
-    border-radius: 6px;
-}
-
-.book-box h3 {
-    margin-top: 0;
-    font-size: 24px;
-}
-
-.book-box p {
-    margin-bottom: 6px;
-}
-
-.book-title {
-    font-size: 23px !important;
-    margin-top: 15px !important;
-}
-
-.quote-box {
-    margin: 25px 0;
-    padding: 20px 25px;
-    background: #f8f8f8;
-    border-left: 5px solid #555;
-    border-radius: 6px;
-}
-
-.quote-box p {
-    margin: 0;
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-
-/* Mobile Responsive */
-
-@media (max-width: 768px) {
-
-    .about-founder {
-        padding: 35px 15px;
-    }
-
-    .about-content {
-        padding: 25px 20px;
-    }
-
-    .about-content h2 {
-        font-size: 28px;
-    }
-
-    .about-content h3 {
-        font-size: 18px;
-    }
-
-    .designation {
-        font-size: 16px;
-        line-height: 1.6;
-    }
-
-    .about-content p {
-        font-size: 15px;
-        line-height: 1.7;
-    }
-
-    .book-title {
-        font-size: 20px !important;
-    }
-
-}
-
-</style>
-
-
-            <div class="profile-tags">
-
-                <span class="profile-tag">
-                    Computer Training
-                </span>
-
-                <span class="profile-tag">
-                    Digital Marketing
-                </span>
-
-                <span class="profile-tag">
-                    Web Development
-                </span>
-
-                <span class="profile-tag">
-                    Data Analysis
-                </span>
-
-                <span class="profile-tag">
-                    Power BI
-                </span>
-
-                <span class="profile-tag">
-                    Publishing
-                </span>
-
-            </div>
 
         </div>
 
@@ -3099,18 +2746,11 @@
                 id="contact-form">
 
 
-                <!-- =================================================
-                     IMPORTANT:
-                     REPLACE THIS VALUE WITH YOUR WEB3FORMS ACCESS KEY
-                ================================================== -->
-
                 <input
                     type="hidden"
                     name="access_key"
                     value="15456ed8-a22a-4f93-87fc-601767a572ec">
 
-
-                <!-- EMAIL SUBJECT -->
 
                 <input
                     type="hidden"
@@ -3118,23 +2758,17 @@
                     value="New Enquiry - GLOBAL IT PUBLICATION">
 
 
-                <!-- FROM NAME -->
-
                 <input
                     type="hidden"
                     name="from_name"
                     value="GLOBAL IT PUBLICATION Website">
 
 
-                <!-- REPLY TO -->
-
                 <input
                     type="hidden"
                     name="replyto"
                     value="email">
 
-
-                <!-- SPAM PROTECTION -->
 
                 <input
                     type="checkbox"
@@ -3254,8 +2888,6 @@
 
                 </button>
 
-
-                <!-- RESULT -->
 
                 <div id="form-result"></div>
 
